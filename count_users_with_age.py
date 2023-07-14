@@ -7,5 +7,30 @@ def count_users_with_age(data:list, age:int) -> int:
         age (int): The age to search for
     Returns:
         int: The number of users with the given age
-    """
-    return 
+    """ 
+    s = 0
+    for i in data:
+        if i['age'] == age:
+            s += 1
+
+    return s 
+
+data = [
+{
+    'name': 'John',
+    'age': 27
+},
+{
+    'name':'Mary', 
+    'age': 42
+},
+{
+    'name':'Ann',
+    'age': 27
+}
+]
+
+
+age = 27
+a = count_users_with_age(data,age)
+print(a)

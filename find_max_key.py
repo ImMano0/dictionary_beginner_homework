@@ -6,4 +6,17 @@ def find_max_key(data: dict):
     Returns:
         int: The maximum key in the dictionary.
     """
-    return 
+    list1=[]
+    for key in data:
+            list1.append(key)
+
+    return max(list1)
+
+data = {
+    1 : "Khiva", 
+    2 : "Namangan", 
+    3 : "Samarkand", 
+    4 : "Tashkent"
+}
+
+print(find_max_key(data))
