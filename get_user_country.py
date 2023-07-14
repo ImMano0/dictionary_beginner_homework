@@ -8,7 +8,7 @@ def get_user_country(data:list, name:str) -> list:
     Returns:
         str: The country of the user with the given name
     """
-    b = ''
+    b =  ''
     for i in data:
         if i['name'] == name:
             b = i['country']
@@ -42,5 +42,5 @@ data = [
 ]
 
 
-name = input('Ismimni ayt:   ')
+name = "Sam"
 print(get_user_country(data,name))
